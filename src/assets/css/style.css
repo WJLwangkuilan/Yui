@@ -1,0 +1,81 @@
+html,
+body {
+    height: 100%;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+ul,
+ol,
+li,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+dl,
+dd,
+dt {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 清除浮动 */
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+    overflow: hidden;
+    height: 0;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* 顶部el-radio-button字体加粗 */
+
+div>>>.el-radio-button__inner {
+    font-weight: 600;
+}
+
+
+/* 举报查看 帖子管理的分页样式 */
+
+.pag {
+    height: 100px;
+    box-sizing: border-box;
+    padding-top: 40px;
+    border-top: 1px solid #ebeef5;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 1px;
+    z-index: 999;
+}
+
+
+/* setban页面的Notification 通知 */
+
+.el-notification.right.confirmpos {
+    right: 120px;
+}
+
+.el-radio-button--medium .el-radio-button__inner {
+    font-weight: 700;
+}
